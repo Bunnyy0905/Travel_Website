@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    /* overflow: hidden; */
+}
+
+.more-main {
+    /* position: absolute; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-bottom: 40px;
+}
+
+
+.more-heading h1{
+    text-align: center;
+    padding-top: 5%;
+    font-size: 40px;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+}
+
+.more-heading h1::after {
+    content: '';
+    background: crimson;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.more-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+    transition: .2s ease;
+
+
+}
+
+.place_name {
+    font-size: 1.2rem;
+    font-style: italic;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: crimson;
+    opacity: .7;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    visibility: hidden;
+    transition: .3s ease;
+}
+
+.more-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.more-container:hover .place_name {
+    visibility: visible;
+
+}
+
+.more-container:hover .more-image {
+    transform: scale(1.1);
+}
+
+.services-list div a{
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 12px;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.services-list div:hover{
+    background: #ababab;
+    transform: translateY(-10px);
+}
+
+.btn{
+    display:block;
+    margin: 50px auto;
+    font-size: 1.1em;
+    width: fit-content;
+    border: 1px solid crimson;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s ease;
+   
+    
+    
+}
+
+.btn:hover{
+    background: crimson;
+    color: #fff;
+    transform: scale(1.2);
+
+}
+
+
+a{
+    text-decoration: none;
+
+}
